@@ -9,6 +9,7 @@ import jade.domain.FIPAAgentManagement.Envelope;
 import jade.domain.FIPAAgentManagement.SearchConstraints;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.lang.acl.ACLMessage;
+
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.Iterator;
@@ -115,7 +116,8 @@ public class Utils
                     AID provider = dfd.getName();
                     
                     //un mismo agente puede proporcionar varios servicios, solo estamos interasados en "tipo"
-                    Iterator it = dfd.getAllServices();
+                    @SuppressWarnings("rawtypes")
+					Iterator it = dfd.getAllServices();
                     while (it.hasNext())
                     {
                         ServiceDescription sd = (ServiceDescription) it.next();

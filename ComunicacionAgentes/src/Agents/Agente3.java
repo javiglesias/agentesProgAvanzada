@@ -11,7 +11,7 @@ import jade.lang.acl.UnreadableException;
 
 
 @SuppressWarnings("serial")
-public class Agente2 extends Agent 
+public class Agente3 extends Agent 
 {
 	@SuppressWarnings("unused")
 	private static final long serialVerisonUID = 1L;
@@ -64,3 +64,4 @@ public class Agente2 extends Agent
 			addBehaviour(cyclicBehaviour);
 		}
 }
+

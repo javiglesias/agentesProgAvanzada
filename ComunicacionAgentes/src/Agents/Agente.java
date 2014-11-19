@@ -1,22 +1,15 @@
 package Agents;
 
-import java.io.IOException;
-import java.io.Serializable;
-import java.util.Scanner;
-
-import jade.content.lang.sl.SLCodec;
-import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
-import jade.domain.FIPANames;
-import jade.domain.FIPAAgentManagement.DFAgentDescription;
-import jade.domain.FIPAAgentManagement.Envelope;
-import jade.gui.AIDGui;
-import jade.lang.acl.ACLMessage;
+
+import java.util.Scanner;
 
 
+@SuppressWarnings("serial")
 public class Agente extends Agent 
 {
+	@SuppressWarnings("unused")
 	private static final long serialVerisonUID = 1L;
 	protected CyclicBehaviour cyclicBehaviour;
 	Scanner sc = new Scanner(System.in);
